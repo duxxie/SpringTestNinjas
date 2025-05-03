@@ -1,6 +1,11 @@
-package com.example.ainda;
+package com.example.ainda.Ninjas;
 
+import com.example.ainda.Missoes.MissaoModel;
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 // Transforma em uma entidade no BD
 // JPA
 @Entity
@@ -15,6 +20,9 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    @ManyToOne
+    @JoinColumn(name = "missoes_id")
+    private MissaoModel missao;
 
     public NinjaModel() {
     }

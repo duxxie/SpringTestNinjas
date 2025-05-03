@@ -1,4 +1,4 @@
-package com.example.ainda;
+package com.example.ainda.Ninjas;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping
 public class NinjaController {
 
-    @GetMapping("/boasvindas")
+    @GetMapping("/ninjas")
     /*@PostMapping
     @PutMapping
     @PatchMapping
     @DeleteMapping*/
-    public String boasVindas() {
-        return "Essa é a minha primeira mensagem!";
+    public String ninjas() {
+        return "Essa é o controlador de Ninjas!";
     }
 }
